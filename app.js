@@ -32,7 +32,7 @@ https.get(url, function(response){
     const feels_like = weatherData.main.feels_like;
     const desc = weatherData.weather[0].description;
     const icon = weatherData.weather[0].icon;
-    const imageURL = "http://openweathermap.org/img/wn/" + icon +"@4x.png";
+    const imageURL = "https://openweathermap.org/img/wn/" + icon +"@4x.png";
     // res.write("<h1> The temperature in " + query +" is " + temp + " degrees celsius. It is a bit  " + desc + "</h1>")
     // res.write("<img src=" + imageURL + "  >");
     res.render("index", {query: query, temp:temp, feels_like:feels_like, desc:desc, imageURL:imageURL});
