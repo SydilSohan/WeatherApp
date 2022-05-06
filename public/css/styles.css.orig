@@ -1,0 +1,15 @@
+.dvv{
+  margin-top: 5%;
+  background: #79DAE8;
+  width: 400px;
+  /* height: 1200px; */
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+body{
+<<<<<<< HEAD
+  background #0AA1DD;
+=======
+  background: #0AA1DD;
+>>>>>>> 6e4a83b644784d69f05d495d8a16639a2ce60454
+}
