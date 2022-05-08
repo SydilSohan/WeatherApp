@@ -1,11 +1,16 @@
 <%- include("header") -%>
 
 
+
+
+
+
+
 <div class="d-flex justify-content-center">
   <div id="myForm" class=" dvv">
-    <form  method="post">
+    <form action="/" method="post">
       <label for="cityName">City Name :</label>
-      <input data-geocomplete="city" class="form-control" id="cityName" type="text" name="cityName" placeholder="city" >
+      <input id="ss" data-geocomplete="city" class="form-control" id="cityName" type="text" name="cityName" placeholder="city" >
       <button style="margin-top: 10px;" class="btn btn-primary" type="submit" name="submit">Enter</button>
     </form>
 
@@ -18,11 +23,11 @@
 
 
 
-<!-- <div class="row g-3">
-  <div class="col-sm-7">
-    <input type="text" class="form-control" placeholder="City" aria-label="City">
-  </div>
+<script type="text/javascript">
+  function activatePlacesSearch(){
+  var input =  document.getElementById('ss');
 
-</div> -->
-
+      var autocomplete = new google.maps.places.Autocomplete(input);
+  }
+</script>
   <%- include("footer") -%>
